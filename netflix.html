@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Home Page</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #141414;
+        font-family: Arial, sans-serif;
+        color: white;
+       
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #e50914;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .hero {
+        position: relative;
+        background-image: url("https://www.tapeteos.pl/data/media/1282/big/stranger_things__2016__serial_tv_006.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        display: flex;
+        align-items: flex-end;
+        padding: 60px 30px;
+        margin-top: 80px;
+      }
+
+      .hero-content {
+        max-width: 600px;
+      }
+
+      .hero-content h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      .hero-content p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+      }
+
+      .row {
+        padding: 20px 30px;
+      }
+
+      .row h2 {
+        margin-bottom: 10px;
+      }
+
+      .row-posters {
+        display: flex;
+        overflow-x: auto;
+        gap: 30px;
+        padding-bottom: 10px;
+      }
+
+      .row-posters img {
+        height: 200px;
+        border-radius: 4px;
+        transition: transform 0.2s;
+        width: 400px;
+      }
+
+      .row-posters img:hover {
+        transform: scale(1.1);
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">NETFLIX</div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Movies</a>
+        <a href="#">My List</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Stranger Things</h1>
+        <p>
+          When a young boy vanishes, a small town uncovers a mystery involving
+          secret experiments, terrifying supernatural forces and one strange
+          little girl.
+        </p>
+      </div>
+    </section>
+
+    <section class="row">
+      <h2>Popular on Netflix</h2>
+      <div class="row-posters">
+        <img src="./aven.jpg" alt="Movie 1" />
+        <img src="./kgf.jpg" alt="Movie 2" />
+        <img src="./kgff.jpg" alt="Movie 3" />
+        <img src="./salaar-part-one-movie-poster.avif" alt="Movie 4" />
+        <img src="./na_5e1db9aa7fa4f.jpg" alt="Movie 5" />
+      </div>
+    </section>
+
+    <section class="row">
+      <h2>Trending Now</h2>
+      <div class="row-posters">
+        <img src="./th.jpg" alt="Movie 1" />
+        <img src="./war2.jpg" alt="Movie 2" />
+        <img src="./kgf.jpg" alt="Movie 3" />
+        <img src="./aven.jpg" alt="Movie 4" />
+        <img src="./755150-luka-chupi-poster.avif" alt="Movie 5" />
+      </div>
+    </section>
+  </body>
+</html>
